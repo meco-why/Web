@@ -12,8 +12,8 @@ async function includeHTML() {
     };
 
     // Load header and footer
-    await includeFile('#header', '/header.html');
-    await includeFile('#footer', '/footer.html');
+    await includeFile('#header', '/layout/header.html');
+    await includeFile('#footer', '/layout/footer.html');
 }
 
 // Run the function
