@@ -2,59 +2,77 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /*ont-size: 16px;
-  /*font-family: 'roboto', sans-serif;*/
 }
 
-
-header {
-  /*position: sticky;   /* key property */
-  top: 0;             /* stick to very top */
-  width: 100%;        /* span full width */
+/* ---- HEADER ---- */
+/* ---- FIRST LINE ----*/
+header {            
   background: #333;
-  color: white;
   padding: 1rem;
-  z-index: 1000;      /* make sure it stays above content */
-  text-align:center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
 }
-
-header h1 {
+#top-line{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-items: center;
+}
+#name{
+  margin-right: auto;
+}
+#social{
+  margin-left: auto;
+  display: flex;
+  
+}
+header i {
   color:white;
-  margin-bottom: 1rem;
 }
 
-/* ---- NAVIGATION ---- */
-header nav ul {
-  list-style: none;    /* remove bullet points */
-  display: flex;       /* horizontal menu */
-  gap: 1rem;           /* space between items */
-  margin: 5.5rem 0rem;
+/* ---- NAVIGATION LINE ---- */
+header nav {
+  display: flex;      
+  gap: 1rem;               /* space between items */
+  justify-content: center; /* horizontal alignment*/
 }
 
-/* ---- LINKS ---- */
+.links{
+  color:white;
+  text-decoration: none;
+}
+
+
+
 header nav a {
-  color: white;        /* link text color */
-  text-decoration: none; /* remove underline */
-  padding: 0.5rem 1rem; /* top right bottom left*/
+    padding: 0.5rem 1rem;     /* top right bottom left*/
+}
+
+header a { 
   border-radius: 0.3rem;
   transition: background 0.3s ease; /* smooth hover effect */
 }
 
-header nav a:hover {
+header a:hover {
   background: #555;  
 }
 
+
+/* ---- FOOTER ---- */
 footer {
   background-color: #222;
   color: #fff;
-  text-align:center;
-  padding:1.5rem 0;
+  padding:1rem;
+}
+
+footer a {
+  height: 1rem;
 }
 
 footer img {
   height:1rem;
   width:1rem;
-  /*vertical-align: text-bottom;*/
 }
 
 .copyright {
@@ -63,3 +81,4 @@ footer img {
   justify-content: center;
   gap:0.3rem;
 }
+
