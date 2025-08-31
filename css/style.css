@@ -18,7 +18,7 @@ header {
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
 }
-/* ---- TOP LINE ----*/
+/* TOP ROW */
 #top-line{
   display: flex;
   flex-wrap: wrap;
@@ -45,7 +45,7 @@ header i:hover{
     gap: 10px;
   }
 }
-/* ---- NAVIGATION LINE ---- */
+/* NAVIGATION ROW */
 header nav {
   display: flex;      
   flex-wrap: wrap;
@@ -81,7 +81,9 @@ footer {
 }
 #copyright-section a:hover #copyright-icon {
   animation: fa-bounce 0.8s;
-}
+} 
+
+
 
 /* main */
 main {
