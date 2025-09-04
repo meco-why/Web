@@ -33,8 +33,10 @@ header {
 }
 header i {
   color:white;
+  transition: all 5s ease;
 }
 header i:hover{
+  color:#333;
   animation: fa-spin 2s linear infinite;
 }
  @media (max-width: 28rem){   /* 37rem=37*16px=592px */
