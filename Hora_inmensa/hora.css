@@ -1,0 +1,20 @@
+
+
+main {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+main div{
+    text-align: center;
+    padding: 1rem;
+}
+
+#author {
+    font-style: italic;
+}
+
+poem {
+    text-align: left;
+}
