@@ -1,5 +1,5 @@
 
-// declare/define the function
+//function declaration and definition
 async function includeHTML() {
 	
     const includeFile = async (selector, url) => {
@@ -24,5 +24,5 @@ async function includeHTML() {
 }
 
 
-// Run the function
+// Running the function
 includeHTML();

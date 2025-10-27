@@ -87,8 +87,10 @@ footer {
 
 
 
-/* main */
-main {
+/* main w index (HOME PAGE) */
+#index {
   padding:1rem;
+  display: flex;
+  justify-content: center;
 }
 
