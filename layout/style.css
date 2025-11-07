@@ -1,0 +1,120 @@
+/* 
+
+.name -> class
+#name -> id
+
+ */
+
+
+/* ---- GLOBAL SETTINGS ---- */
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* ---- TEXT LINKS ---- */
+.links-white{
+  color:white;
+  text-decoration: none;
+}
+.links-white-grey{
+  color:white;
+  text-decoration: none;
+}
+.links-white-grey:hover{
+  color:#c3c3c3;
+}
+.links-blue{
+  color:blue;
+  text-decoration: none;
+}
+.links-blue:hover {
+  color:rgb(130, 130, 255);
+}
+
+
+/* ---- HEADER ---- */
+/* HEADER = grid layout consisting of 2 rows:
+        1) <div> #top-line ("MIKOŁAJ WYBACZ" + social media icons)
+        2) <nav> (navigation buttons — menu)
+*/
+header {            
+  background: #333;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+}
+/* TOP ROW */
+#top-line{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom:0.5rem;
+}
+#social{
+  display: flex;
+  font-size: 1.5rem;
+  gap: 0.2rem;
+}
+header i {
+  color:white;
+  transition: all 5s ease;
+}
+header i:hover{
+  color:#333;
+  animation: fa-spin 2s linear infinite;
+}
+ @media (max-width: 28rem){   /* 37rem=37*16px=592px */
+  #top-line {
+    flex-direction: column;    /* ułóż w kolumnie */
+    align-items: center;       /* wyśrodkuj */
+    text-align: center;
+    gap: 10px;
+  }
+}
+/* NAVIGATION ROW */
+header nav {
+  display: flex;      
+  flex-wrap: wrap;
+  gap: 1rem;               /* space between items */
+  justify-content: center; /* horizontal alignment*/
+}
+header nav a {
+  padding: 0.5rem 1rem;     /* top right bottom left*/
+  border-radius: 0.3rem;
+  transition: background 0.3s ease; /* smooth hover effect */
+}
+header nav a:hover {
+  background: #555;  
+}
+
+
+
+/* ---- FOOTER ---- */
+footer {
+  background-color: #222;
+  color: #fff;
+  padding:1rem;
+}
+#copyright-section {
+  display:flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap:0.3rem;
+}
+/* #copyright-section a:hover {
+  color: #c3c3c3;
+} */
+#copyright-section a:hover #copyright-icon {
+  animation: fa-bounce 0.8s;
+} 
+
+
+
+
+
