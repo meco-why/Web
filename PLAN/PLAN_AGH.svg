@@ -24,9 +24,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="0.79832019"
-     inkscape:cx="531.11522"
-     inkscape:cy="187.26822"
+     inkscape:zoom="0.56449762"
+     inkscape:cx="433.12849"
+     inkscape:cy="312.66739"
      inkscape:window-width="1920"
      inkscape:window-height="974"
      inkscape:window-x="-11"
@@ -175,37 +175,37 @@
      inkscape:groupmode="layer"
      id="layer8"
      inkscape:label="kalendarz"><rect
-       style="fill:#7c7c7c;fill-opacity:0.60000002;stroke:#7c7c7c;stroke-width:0;stroke-linejoin:round;stroke-opacity:0.4"
+       style="fill:#7c7c7c;fill-opacity:0.6;stroke:#7c7c7c;stroke-width:0;stroke-linejoin:round;stroke-opacity:0.4"
        id="rect13"
-       width="28.591057"
+       width="32.153877"
        height="135.64398"
        x="6.9427052"
        y="5.5365877"
        ry="0" /><rect
-       style="fill:#7c7c7c;fill-opacity:0.60000002;stroke:#7c7c7c;stroke-width:0;stroke-linejoin:round;stroke-opacity:0.4"
+       style="fill:#7c7c7c;fill-opacity:0.6;stroke:#7c7c7c;stroke-width:0;stroke-linejoin:round;stroke-opacity:0.4"
        id="rect13-8"
-       width="28.591057"
+       width="31.988163"
        height="127.93834"
        x="64.373207"
        y="5.6431961"
        ry="0" /><rect
-       style="fill:#7c7c7c;fill-opacity:0.60000002;stroke:#7c7c7c;stroke-width:0;stroke-linejoin:round;stroke-opacity:0.4"
+       style="fill:#7c7c7c;fill-opacity:0.6;stroke:#7c7c7c;stroke-width:0;stroke-linejoin:round;stroke-opacity:0.4"
        id="rect13-1"
-       width="28.673912"
+       width="32.071018"
        height="125.28694"
        x="121.81791"
        y="5.5911059"
        ry="0" /><rect
-       style="fill:#7c7c7c;fill-opacity:0.60000002;stroke:#7c7c7c;stroke-width:0;stroke-linejoin:round;stroke-opacity:0.4"
+       style="fill:#7c7c7c;fill-opacity:0.6;stroke:#7c7c7c;stroke-width:0;stroke-linejoin:round;stroke-opacity:0.4"
        id="rect13-2"
-       width="28.632484"
+       width="32.029591"
        height="127.68977"
        x="179.35826"
        y="5.5581656"
        ry="0" /><rect
-       style="fill:#7c7c7c;fill-opacity:0.60000002;stroke:#7c7c7c;stroke-width:0;stroke-linejoin:round;stroke-opacity:0.4"
+       style="fill:#7c7c7c;fill-opacity:0.6;stroke:#7c7c7c;stroke-width:0;stroke-linejoin:round;stroke-opacity:0.4"
        id="rect13-23"
-       width="28.673912"
+       width="31.988163"
        height="135.64398"
        x="236.76535"
        y="5.5835795"
@@ -275,14 +275,14 @@
        inkscape:label="cpp_cwl"><tspan
          x="927.72461"
          y="374.75612"
-         id="tspan1">C++ CWL
+         id="tspan35">C++ CWL
 </tspan><tspan
          x="927.72461"
          y="391.42275"
-         id="tspan2">D-10 sala 30b </tspan><tspan
+         id="tspan36">D-10 sala 30b </tspan><tspan
          x="927.72461"
          y="408.08937"
-         id="tspan9">14.15–16.30</tspan></text><text
+         id="tspan37">14.15–16.30</tspan></text><text
        xml:space="preserve"
        transform="matrix(0.19987103,0,0,0.19987103,-62.027499,47.634466)"
        id="text61-4-1"
@@ -290,15 +290,15 @@
        inkscape:label="wdn_w"><tspan
          x="927.72461"
          y="374.75612"
-         id="tspan12">WdN W
+         id="tspan38">WdN W
 </tspan><tspan
          x="927.72461"
          y="391.42275"
-         id="tspan13">D-10 sala D-czarna
+         id="tspan39">D-10 sala D-czarna
 </tspan><tspan
          x="927.72461"
          y="408.08937"
-         id="tspan14">16.45–19.00</tspan></text><text
+         id="tspan40">16.45–19.00</tspan></text><text
        xml:space="preserve"
        transform="matrix(0.18755256,0,0,0.18755256,-12.466951,52.63785)"
        id="text61-4-1-6"
@@ -306,15 +306,15 @@
        inkscape:label="wdn_konw"><tspan
          x="927.72461"
          y="374.75612"
-         id="tspan27">WdN Konw
+         id="tspan41">WdN Konw
 </tspan><tspan
          x="927.72461"
          y="391.42275"
-         id="tspan28">D-10 sala D-czarna
+         id="tspan42">D-10 sala D-czarna
 </tspan><tspan
          x="927.72461"
          y="408.08937"
-         id="tspan29">16.45–19.00</tspan></text><text
+         id="tspan43">16.45–19.00</tspan></text><text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,-169.16078,15.76163)"
        id="text61-4-1-0"
@@ -322,11 +322,11 @@
        inkscape:label="zwn_cwp"><tspan
          x="927.72461"
          y="374.75612"
-         id="tspan30">ZwN CWP
+         id="tspan44">ZwN CWP
 </tspan><tspan
          x="927.72461"
          y="391.42275"
-         id="tspan31">15.00–19.00
+         id="tspan45">15.00–19.00
 </tspan></text><text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,-220.05159,-25.876305)"
@@ -335,19 +335,19 @@
        inkscape:label="wdn_cwl"><tspan
          x="927.72461"
          y="374.75612"
-         id="tspan32">WdN CWL
+         id="tspan46">WdN CWL
 </tspan><tspan
          x="927.72461"
          y="391.42275"
-         id="tspan33">D-7
+         id="tspan47">D-7
 </tspan><tspan
          x="927.72461"
          y="408.08937"
-         id="tspan34">11.30–14.30
+         id="tspan48">11.30–14.30
 </tspan><tspan
          x="927.72461"
          y="424.756"
-         id="tspan62">
+         id="tspan49">
 </tspan></text><text
        xml:space="preserve"
        transform="matrix(0.27392591,0,0,0.27392591,-73.971224,-79.261289)"
@@ -356,15 +356,15 @@
        inkscape:label="mbn_cwl"><tspan
          x="927.72461"
          y="374.75612"
-         id="tspan63">MbN CWL
+         id="tspan50">MbN CWL
 </tspan><tspan
          x="927.72461"
          y="391.42275"
-         id="tspan64">B-8
+         id="tspan51">B-8
 </tspan><tspan
          x="927.72461"
          y="408.08937"
-         id="tspan65">8.00–10.15</tspan></text><text
+         id="tspan52">8.00–10.15</tspan></text><text
        xml:space="preserve"
        transform="matrix(0.14154945,0,0,0.14154945,-6.641735,-32.160619)"
        id="text61-4-3"
@@ -372,11 +372,11 @@
        inkscape:label="mbn_w"><tspan
          x="927.72461"
          y="374.75612"
-         id="tspan66">MbN4- W
+         id="tspan53">MbN4- W
 </tspan><tspan
          x="927.72461"
          y="391.42275"
-         id="tspan67">B-8 sala 1.24</tspan></text><text
+         id="tspan54">B-8 sala 1.24</tspan></text><text
        xml:space="preserve"
        transform="matrix(0.18291922,0,0,0.18291922,-64.816001,-24.390981)"
        id="text61-4"
@@ -384,11 +384,11 @@
        inkscape:label="mbn_w"><tspan
          x="927.72461"
          y="374.75612"
-         id="tspan68">MbN W
+         id="tspan55">MbN W
 </tspan><tspan
          x="927.72461"
          y="391.42275"
-         id="tspan69">B-8 sala 3.22</tspan></text><text
+         id="tspan56">B-8 sala 3.22</tspan></text><text
        xml:space="preserve"
        transform="matrix(0.16509641,0,0,0.16509641,84.815992,71.87624)"
        id="text61-8"
@@ -396,11 +396,11 @@
        inkscape:label="cpp_w"><tspan
          x="927.72461"
          y="374.75612"
-         id="tspan70">C++ W
+         id="tspan57">C++ W
 </tspan><tspan
          x="927.72461"
          y="391.42275"
-         id="tspan71">D-10 sala 15</tspan></text><text
+         id="tspan58">D-10 sala 15</tspan></text><text
        xml:space="preserve"
        transform="matrix(0.17205217,0,0,0.17205217,90.30848,-33.682785)"
        id="text61-7"
@@ -408,11 +408,11 @@
        inkscape:label="zwn_w"><tspan
          x="927.72461"
          y="374.75612"
-         id="tspan72">ZwN W
+         id="tspan59">ZwN W
 </tspan><tspan
          x="927.72461"
          y="391.42275"
-         id="tspan73">D-10 sala 15</tspan></text></g><g
+         id="tspan60">D-10 sala 15</tspan></text></g><g
      inkscape:groupmode="layer"
      id="layer4"
      inkscape:label="weaiiib W"
@@ -589,14 +589,14 @@
        transform="translate(-0.93544334,0.84189901)"><tspan
          x="237.6026"
          y="20.205576"
-         id="tspan74">Podstawy </tspan><tspan
+         id="tspan61">Podstawy </tspan><tspan
          x="237.6026"
          y="24.174325"
-         id="tspan75">infromatyki W
+         id="tspan62">infromatyki W
 </tspan><tspan
          x="237.6026"
          y="28.143075"
-         id="tspan76">H-B1B2 sala H24</tspan></text><text
+         id="tspan63">H-B1B2 sala H24</tspan></text><text
        xml:space="preserve"
        style="font-size:1.7698px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;display:inline;fill:#7c7c7c;fill-opacity:1;stroke:none;stroke-width:0.0557419;stroke-linejoin:round;stroke-dasharray:none"
        x="68.834869"
@@ -680,15 +680,15 @@
        transform="translate(7.2760417)"><tspan
          x="125.44295"
          y="94.386238"
-         id="tspan77">Konserwacja zabytków
+         id="tspan64">Konserwacja zabytków
 </tspan><tspan
          x="125.44295"
          y="98.35499"
-         id="tspan78">B-8 sala 2.19
+         id="tspan65">B-8 sala 2.19
 </tspan><tspan
          x="125.44295"
          y="102.32374"
-         id="tspan79">15.00–17.30</tspan></text><text
+         id="tspan66">15.00–17.30</tspan></text><text
        xml:space="preserve"
        style="font-size:3.175px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;display:none;fill:#7c7c7c;fill-opacity:1;stroke:none;stroke-width:0.1;stroke-linejoin:round;stroke-dasharray:none"
        x="179.54532"
@@ -780,15 +780,15 @@
        transform="matrix(0.63022301,0,0,0.63022301,3.2083555,19.50567)"><tspan
          x="13.657473"
          y="56.31369"
-         id="tspan80">OG W
+         id="tspan67">OG W
 </tspan><tspan
          x="13.657473"
          y="60.282442"
-         id="tspan81">H-B1B2 
+         id="tspan68">H-B1B2 
 </tspan><tspan
          x="13.657473"
          y="64.251192"
-         id="tspan82">sala H24</tspan></text><text
+         id="tspan69">sala H24</tspan></text><text
        xml:space="preserve"
        style="font-size:2.27211px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;inline-size:24.3795;display:inline;fill:#7c7c7c;fill-opacity:0.4;stroke:none;stroke-width:0.0715625;stroke-linejoin:round;stroke-dasharray:none"
        x="238.16153"
@@ -796,12 +796,12 @@
        id="text9"><tspan
          x="238.16153"
          y="61.571365"
-         id="tspan83">Bezpieczeństwo W
+         id="tspan70">Bezpieczeństwo W
 </tspan><tspan
          x="238.16153"
          y="64.411504"
-         id="tspan84">H-B1B2 sala H24
+         id="tspan71">H-B1B2 sala H24
 </tspan><tspan
          x="238.16153"
          y="67.251645"
-         id="tspan85">11.30–13.00</tspan></text></g></svg>
+         id="tspan72">11.30–13.00</tspan></text></g></svg>
