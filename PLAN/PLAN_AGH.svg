@@ -24,9 +24,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="0.79832016"
-     inkscape:cx="415.24693"
-     inkscape:cy="310.02599"
+     inkscape:zoom="1.1289952"
+     inkscape:cx="624.44907"
+     inkscape:cy="264.39439"
      inkscape:window-width="1920"
      inkscape:window-height="974"
      inkscape:window-x="-11"
@@ -187,35 +187,35 @@
      inkscape:label="kalendarz"><rect
        style="fill:#7c7c7c;fill-opacity:0.6;stroke:#7c7c7c;stroke-width:0;stroke-linejoin:round;stroke-opacity:0.4"
        id="rect13"
-       width="38.832935"
+       width="42.113876"
        height="135.64398"
        x="7.2942348"
        y="5.4194112"
        ry="0" /><rect
        style="fill:#7c7c7c;fill-opacity:0.6;stroke:#7c7c7c;stroke-width:0;stroke-linejoin:round;stroke-opacity:0.4"
        id="rect13-8"
-       width="38.782379"
+       width="42.06332"
        height="127.93834"
        x="64.704636"
        y="5.5603399"
        ry="0" /><rect
        style="fill:#7c7c7c;fill-opacity:0.6;stroke:#7c7c7c;stroke-width:0;stroke-linejoin:round;stroke-opacity:0.4"
        id="rect13-1"
-       width="38.94809"
+       width="42.229031"
        height="125.28694"
        x="121.81791"
        y="5.5911059"
        ry="0" /><rect
        style="fill:#7c7c7c;fill-opacity:0.6;stroke:#7c7c7c;stroke-width:0;stroke-linejoin:round;stroke-opacity:0.4"
        id="rect13-2"
-       width="38.823807"
+       width="42.280514"
        height="127.68977"
        x="179.35826"
        y="5.5581656"
        ry="0" /><rect
        style="fill:#7c7c7c;fill-opacity:0.6;stroke:#7c7c7c;stroke-width:0;stroke-linejoin:round;stroke-opacity:0.4"
        id="rect13-23"
-       width="38.622555"
+       width="42.020672"
        height="135.64398"
        x="236.76535"
        y="5.5835795"
@@ -287,14 +287,14 @@
        inkscape:label="cpp_cwl"><tspan
          x="927.72461"
          y="374.75612"
-         id="tspan59">C++ CWL
+         id="tspan1">C++ CWL
 </tspan><tspan
          x="927.72461"
          y="391.42275"
-         id="tspan60">D-10 sala 30b </tspan><tspan
+         id="tspan2">D-10 sala 30b </tspan><tspan
          x="927.72461"
          y="408.08937"
-         id="tspan61">14.15–16.30</tspan></text><text
+         id="tspan9">14.15–16.30</tspan></text><text
        xml:space="preserve"
        transform="matrix(0.19987103,0,0,0.19987103,-62.027499,47.634466)"
        id="text61-4-1"
@@ -302,15 +302,15 @@
        inkscape:label="wdn_w"><tspan
          x="927.72461"
          y="374.75612"
-         id="tspan62">WdN W
+         id="tspan12">WdN W
 </tspan><tspan
          x="927.72461"
          y="391.42275"
-         id="tspan63">D-10 sala D-czarna
+         id="tspan13">D-10 sala D-czarna
 </tspan><tspan
          x="927.72461"
          y="408.08937"
-         id="tspan64">16.45–19.00</tspan></text><text
+         id="tspan14">16.45–19.00</tspan></text><text
        xml:space="preserve"
        transform="matrix(0.18755256,0,0,0.18755256,-12.466951,52.63785)"
        id="text61-4-1-6"
@@ -318,15 +318,15 @@
        inkscape:label="wdn_konw"><tspan
          x="927.72461"
          y="374.75612"
-         id="tspan65">WdN Konw
+         id="tspan27">WdN Konw
 </tspan><tspan
          x="927.72461"
          y="391.42275"
-         id="tspan66">D-10 sala D-czarna
+         id="tspan28">D-10 sala D-czarna
 </tspan><tspan
          x="927.72461"
          y="408.08937"
-         id="tspan67">16.45–19.00</tspan></text><text
+         id="tspan29">16.45–19.00</tspan></text><text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,-169.16078,15.76163)"
        id="text61-4-1-0"
@@ -334,11 +334,11 @@
        inkscape:label="zwn_cwp"><tspan
          x="927.72461"
          y="374.75612"
-         id="tspan68">ZwN CWP
+         id="tspan30">ZwN CWP
 </tspan><tspan
          x="927.72461"
          y="391.42275"
-         id="tspan69">15.00–19.00
+         id="tspan31">15.00–19.00
 </tspan></text><text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,-220.05159,-25.876305)"
@@ -347,19 +347,19 @@
        inkscape:label="wdn_cwl"><tspan
          x="927.72461"
          y="374.75612"
-         id="tspan70">WdN CWL
+         id="tspan32">WdN CWL
 </tspan><tspan
          x="927.72461"
          y="391.42275"
-         id="tspan71">D-7
+         id="tspan33">D-7
 </tspan><tspan
          x="927.72461"
          y="408.08937"
-         id="tspan72">11.30–14.30
+         id="tspan34">11.30–14.30
 </tspan><tspan
          x="927.72461"
          y="424.756"
-         id="tspan73">
+         id="tspan35">
 </tspan></text><text
        xml:space="preserve"
        transform="matrix(0.27392591,0,0,0.27392591,-73.971224,-79.261289)"
@@ -368,15 +368,15 @@
        inkscape:label="mbn_cwl"><tspan
          x="927.72461"
          y="374.75612"
-         id="tspan74">MbN CWL
+         id="tspan36">MbN CWL
 </tspan><tspan
          x="927.72461"
          y="391.42275"
-         id="tspan75">B-8
+         id="tspan37">B-8
 </tspan><tspan
          x="927.72461"
          y="408.08937"
-         id="tspan76">8.00–10.15</tspan></text><text
+         id="tspan38">8.00–10.15</tspan></text><text
        xml:space="preserve"
        transform="matrix(0.14154945,0,0,0.14154945,-6.641735,-32.160619)"
        id="text61-4-3"
@@ -384,11 +384,11 @@
        inkscape:label="mbn_w"><tspan
          x="927.72461"
          y="374.75612"
-         id="tspan77">MbN4- W
+         id="tspan39">MbN4- W
 </tspan><tspan
          x="927.72461"
          y="391.42275"
-         id="tspan78">B-8 sala 1.24</tspan></text><text
+         id="tspan40">B-8 sala 1.24</tspan></text><text
        xml:space="preserve"
        transform="matrix(0.18291922,0,0,0.18291922,-64.816001,-24.390981)"
        id="text61-4"
@@ -396,11 +396,11 @@
        inkscape:label="mbn_w"><tspan
          x="927.72461"
          y="374.75612"
-         id="tspan79">MbN W
+         id="tspan41">MbN W
 </tspan><tspan
          x="927.72461"
          y="391.42275"
-         id="tspan80">B-8 sala 3.22</tspan></text><text
+         id="tspan42">B-8 sala 3.22</tspan></text><text
        xml:space="preserve"
        transform="matrix(0.16509641,0,0,0.16509641,84.815992,71.87624)"
        id="text61-8"
@@ -408,11 +408,11 @@
        inkscape:label="cpp_w"><tspan
          x="927.72461"
          y="374.75612"
-         id="tspan81">C++ W
+         id="tspan43">C++ W
 </tspan><tspan
          x="927.72461"
          y="391.42275"
-         id="tspan82">D-10 sala 15</tspan></text><text
+         id="tspan44">D-10 sala 15</tspan></text><text
        xml:space="preserve"
        transform="matrix(0.17205217,0,0,0.17205217,90.30848,-33.682785)"
        id="text61-7"
@@ -420,11 +420,11 @@
        inkscape:label="zwn_w"><tspan
          x="927.72461"
          y="374.75612"
-         id="tspan83">ZwN W
+         id="tspan45">ZwN W
 </tspan><tspan
          x="927.72461"
          y="391.42275"
-         id="tspan84">D-10 sala 15</tspan></text></g><g
+         id="tspan46">D-10 sala 15</tspan></text></g><g
      inkscape:groupmode="layer"
      id="layer4"
      inkscape:label="weaiiib W"
@@ -602,14 +602,14 @@
        transform="translate(-0.93544334,0.84189901)"><tspan
          x="237.6026"
          y="20.205576"
-         id="tspan85">Podstawy </tspan><tspan
+         id="tspan47">Podstawy </tspan><tspan
          x="237.6026"
          y="24.174325"
-         id="tspan86">infromatyki W
+         id="tspan48">infromatyki W
 </tspan><tspan
          x="237.6026"
          y="28.143075"
-         id="tspan87">H-B1B2 sala H24</tspan></text><text
+         id="tspan49">H-B1B2 sala H24</tspan></text><text
        xml:space="preserve"
        style="font-size:1.7698px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;display:inline;fill:#7c7c7c;fill-opacity:1;stroke:none;stroke-width:0.0557419;stroke-linejoin:round;stroke-dasharray:none"
        x="68.834869"
@@ -695,15 +695,15 @@
        transform="translate(7.2760417)"><tspan
          x="125.44295"
          y="94.386238"
-         id="tspan88">Konserwacja zabytków
+         id="tspan50">Konserwacja zabytków
 </tspan><tspan
          x="125.44295"
          y="98.35499"
-         id="tspan89">B-8 sala 2.19
+         id="tspan51">B-8 sala 2.19
 </tspan><tspan
          x="125.44295"
          y="102.32374"
-         id="tspan90">15.00–17.30</tspan></text><text
+         id="tspan52">15.00–17.30</tspan></text><text
        xml:space="preserve"
        style="font-size:3.175px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;display:none;fill:#7c7c7c;fill-opacity:1;stroke:none;stroke-width:0.1;stroke-linejoin:round;stroke-dasharray:none"
        x="179.54532"
@@ -796,15 +796,15 @@
        transform="matrix(0.63022301,0,0,0.63022301,3.2083555,19.50567)"><tspan
          x="13.657473"
          y="56.31369"
-         id="tspan91">OG W
+         id="tspan53">OG W
 </tspan><tspan
          x="13.657473"
          y="60.282442"
-         id="tspan92">H-B1B2 
+         id="tspan54">H-B1B2 
 </tspan><tspan
          x="13.657473"
          y="64.251192"
-         id="tspan93">sala H24</tspan></text><text
+         id="tspan55">sala H24</tspan></text><text
        xml:space="preserve"
        style="font-size:2.27211px;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;inline-size:24.3795;display:inline;fill:#7c7c7c;fill-opacity:0.4;stroke:none;stroke-width:0.0715625;stroke-linejoin:round;stroke-dasharray:none"
        x="238.16153"
@@ -812,12 +812,12 @@
        id="text9"><tspan
          x="238.16153"
          y="61.571365"
-         id="tspan94">Bezpieczeństwo W
+         id="tspan56">Bezpieczeństwo W
 </tspan><tspan
          x="238.16153"
          y="64.411504"
-         id="tspan95">H-B1B2 sala H24
+         id="tspan57">H-B1B2 sala H24
 </tspan><tspan
          x="238.16153"
          y="67.251645"
-         id="tspan96">11.30–13.00</tspan></text></g></svg>
+         id="tspan58">11.30–13.00</tspan></text></g></svg>
