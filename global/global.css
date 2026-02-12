@@ -1,0 +1,164 @@
+/* 
+
+.name -> class
+#name -> id
+
+ */
+
+
+/* ---- GLOBAL SETTINGS ---- */
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* ---- GLOBAL FONTS ---- */
+@font-face {
+    font-family: 'RomanRustic';
+    src: url('/global/assets/fonts/JGJRR___.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.roman-rustic {
+    font-family: 'RomanRustic', serif;
+}
+
+
+
+/* ---- TEXT LINKS ---- */
+.links-white{
+  color:white;
+  text-decoration: none;
+}
+.links-white-grey{
+  color:white;
+  text-decoration: none;
+}
+.links-white-grey:hover{
+  color:#c3c3c3;
+}
+.links-blue{
+  color:blue;
+  text-decoration: none;
+}
+.links-blue:hover {
+  color:rgb(130, 130, 255);
+}
+.links-black-grey{
+  color:black;
+  text-decoration: none;
+}
+.links-black-grey:hover {
+  color:#c3c3c3;
+}
+
+/* ---- YOUTUBE EMBED VIDEO DIV ---- */
+.yt-embed {
+  width: 100%;
+  max-width: 560px; 
+  margin: 20px auto;
+} /* width="560" height="315" */
+
+.yt-embed iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border-radius: 5px; 
+  border: none;
+}
+
+/* ---- HEADER ---- */
+/* HEADER = grid layout consisting of 2 rows:
+        1) <div> #top-line ("MIKOŁAJ WYBACZ" + social media icons)
+        2) <nav> (navigation buttons — menu)
+*/
+header {            
+  background: #333;
+  /* height: auto; */
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+}
+/* TOP ROW */
+#top-line{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom:0.5rem;
+}
+#name{
+  font-family: "Quintessential", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#social{
+  display: flex;
+  font-size: 1.5rem;
+  gap: 0.2rem;
+}
+header i {
+  color:white;
+  transition: all 5s ease;
+}
+header i:hover{
+  color:#333;
+  animation: fa-spin 2s linear infinite;
+}
+ @media (max-width: 28rem){   /* 37rem=37*16px=592px */
+  #top-line {
+    flex-direction: column;    /* ułóż w kolumnie */
+    align-items: center;       /* wyśrodkuj */
+    text-align: center;
+    gap: 10px;
+  }
+}
+/* NAVIGATION ROW */
+header nav {
+  /* font-family: 'RomanRustic'; */
+  font-size: 1.2rem;
+  display: flex;      
+  flex-wrap: wrap;
+  gap: 1rem;               /* space between items */
+  justify-content: center; /* horizontal alignment*/
+}
+header nav a {
+  padding: 0.5rem 1rem;     /* top right bottom left*/
+  border-radius: 0.3rem;
+  transition: background 0.3s ease; /* smooth hover effect */
+  font-family: inherit; 
+}
+header nav a:hover {
+  background: #555;  
+}
+
+
+
+/* ---- FOOTER ---- */
+footer {
+  background-color: #222;
+  color: #fff;
+  padding:1rem;
+}
+#copyright-section {
+  display:flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap:0.3rem;
+}
+/* #copyright-section a:hover {
+  color: #c3c3c3;
+} */
+#copyright-section a:hover #copyright-icon {
+  animation: fa-bounce 0.8s;
+} 
+
+
+
+
+

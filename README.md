@@ -1,11 +1,16 @@
-"Mecowhyyy ???????"
+# Mecowhyyy ???????
 
-icons from fontawesome
+fontawesome
 
-XD
+**XD**
 
-nudy więc w wolnym czasie się bawię w HTML-a ręcznie wszystko
+nudy 
 
-no i tak
+> cytat
 
-łatwy dostęp do planu zajęć xd
+`kod`
+
+```c++
+// blok kodu
+const int a = 0.;
+```
