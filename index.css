@@ -1,7 +1,7 @@
 /* main w index (HOME PAGE) */
 main {
   /* background-color: #555; */
-  padding:1rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
