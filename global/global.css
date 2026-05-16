@@ -14,6 +14,39 @@
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+/* ---- GLOBALNE ZMIENNE (PALETA KOLORÓW) ---- */
+:root {
+  --bg-main: #1e293b;            /* Główne tło (header, footer) */
+  --bg-glass: rgba(30, 41, 59, 0.85); /* Tło dla szkła (musi pasować do bg-main, ale z przezroczystością) */
+  --text-main: #ffffff;          /* Główny kolor tekstu */
+  --text-hover: #94a3b8;         /* Kolor po najechaniu myszką */
+  --border-color: #334155;       /* Kolor linii oddzielających */
+}
+:root {
+  --bg-body: #0f172a;            /* NOWE: Najciemniejsze tło całej strony (głęboka głębia) */
+  --bg-main: #1e293b;            /* Tło nagłówka i stopki (jaśniejsze, "wyżej") */
+  --bg-glass: rgba(30, 41, 59, 0.85); 
+  --text-main: #f8fafc;          /* Miękka, nie rażąca w oczy biel */
+  --text-hover: #94a3b8;         
+  --border-color: #334155;       
+}
+
+/* ---- GLOBALNE TŁO STRONY ---- */
+body {
+  background-color: var(--bg-body); /* Nadaje całej stronie piękny, ciemny grafit */
+  color: var(--text-main);          /* Domyślny kolor tekstu to biel */
+}
+
+/* ---- GŁÓWNY KONTENER STRONY ---- */
+main {
+  width: 100%;
+  max-width: 900px; /* Taka sama szerokość jak header i footer! */
+  margin: 0 auto; /* Wyśrodkowanie */
+  padding: 2rem 2rem; /* Oddech po bokach i od góry */
+  color: var(--text-main);
+  min-height: 60vh; /* Zapobiega "przyklejaniu" się stopki do headera na pustych stronach */
+}
+
 /* ---- GLOBAL FONTS ---- */
 @font-face {
     font-family: 'RomanRustic';
@@ -24,6 +57,8 @@
 .roman-rustic {
     font-family: 'RomanRustic', serif;
 }
+
+
 
 
 
@@ -54,6 +89,19 @@
   color:#c3c3c3;
 }
 
+/* Globalne style dla linków w treści głównej */
+main a.links-blue, main a.links-black-grey {
+  color: var(--text-hover);
+  text-decoration: none;
+  border-bottom: 1px dashed var(--border-color);
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+main a.links-blue:hover, main a.links-black-grey:hover {
+  color: var(--text-main);
+  border-bottom: 1px solid var(--text-main);
+}
+
 /* ---- YOUTUBE EMBED VIDEO DIV ---- */
 .yt-embed {
   width: 100%;
@@ -74,90 +122,258 @@
         1) <div> #top-line ("MIKOŁAJ WYBACZ" + social media icons)
         2) <nav> (navigation buttons — menu)
 */
+
+/* ---- HEADER ---- */
 header {            
-  background: #333;
-  /* height: auto; */
-  padding: 1rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto;
+  background-color: var(--bg-main);
 }
-/* TOP ROW */
-#top-line{
+
+/* TOP ROW (Imię i ikonki - to znika podczas scrollowania) */
+#top-line {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  margin-bottom:0.5rem;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem 1rem 2rem; /* Odstępy dla górnej części */
 }
-#name{
+
+header h1 {
+  margin: 0;
+}
+
+#name {
   font-family: "Quintessential", serif;
   font-weight: 400;
-  font-style: normal;
+  font-size: 2.2rem;
+  color: var(--text-main);
+  letter-spacing: 0.05em;
+  transition: color 0.3s ease;
 }
 
-#social{
+#name:hover {
+  color: var(--text-hover);
+}
+
+#social {
   display: flex;
   font-size: 1.5rem;
-  gap: 0.2rem;
+  gap: 1.2rem; 
 }
-header i {
-  color:white;
-  transition: all 5s ease;
+
+#social a {
+  display: inline-block;
+  color: var(--text-main);
+  transition: transform 0.3s ease, color 0.3s ease;
 }
-header i:hover{
-  color:#333;
+
+#social a:hover {
+  color: var(--text-hover);
+  transform: translateY(-3px); 
+}
+
+#social a:hover i {
   animation: fa-spin 2s linear infinite;
 }
- @media (max-width: 28rem){   /* 37rem=37*16px=592px */
-  #top-line {
-    flex-direction: column;    /* ułóż w kolumnie */
-    align-items: center;       /* wyśrodkuj */
-    text-align: center;
-    gap: 10px;
-  }
-}
-/* NAVIGATION ROW */
-header nav {
-  /* font-family: 'RomanRustic'; */
-  font-size: 1.2rem;
+
+/* NAVIGATION ROW (Tylko to przykleja się do góry) */
+/* ---- NAVIGATION ROW ---- */
+#main-nav {
   display: flex;      
   flex-wrap: wrap;
-  gap: 1rem;               /* space between items */
-  justify-content: center; /* horizontal alignment*/
-}
-header nav a {
-  padding: 0.5rem 1rem;     /* top right bottom left*/
-  border-radius: 0.3rem;
-  transition: background 0.3s ease; /* smooth hover effect */
-  font-family: inherit; 
-}
-header nav a:hover {
-  background: #555;  
+  gap: 2.5rem; 
+  justify-content: center;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid var(--border-color); 
+  
+  /* --- STICKY DZIAŁA BO JEST LUZEM W BODY --- */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  
+  /* Kolor początkowy (pełny, taki sam jak top-line) */
+  background-color: var(--bg-main); 
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  /* Płynne przejście przy pojawianiu się glassmorphismu */
+  transition: background-color 0.4s ease, backdrop-filter 0.4s ease, border-bottom 0.4s ease;
 }
 
+/* --- KLASA DODAWANA PRZEZ JS PODCZAS SCROLLA --- */
+#main-nav.glass {
+  background-color: var(--bg-glass); /* 70% widoczności */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* Dla Safari / iOS */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05); /* Lżejsza linia przy szkle */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+}
 
+/* Odnośniki w nav - z animacją kreski (zostawiamy, bo jest kozak) */
+#main-nav a {
+  color: var(--text-main);
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 0.5rem 0;
+  position: relative; 
+  transition: color 0.3s ease;
+}
+
+#main-nav a:hover {
+  color: var(--text-hover);
+  background: transparent; 
+}
+
+#main-nav a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: var(--text-main);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+#main-nav a:hover::after {
+  width: 100%; 
+}
+
+/* Responsywność telefon */
+@media (max-width: 768px) {
+  #main-nav {
+    gap: 1.5rem;
+  }
+}
 
 /* ---- FOOTER ---- */
+/* ---------------- */
 footer {
-  background-color: #222;
-  color: #fff;
-  padding:1rem;
+  background-color: var(--bg-main); 
+  color: var(--text-main);
+  padding: 4rem 1.5rem 2rem; 
 }
-#copyright-section {
-  display:flex;
-  flex-wrap: nowrap;
+
+/* Układ dwóch kolumn */
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto 3rem auto; /* Wyśrodkowanie kontenera na stronie */
+}
+
+/* Subtelne nagłówki kolumn */
+.footer-heading {
+  text-align: center;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #888;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+/* ---- MAGIA WYRÓWNANIA ---- */
+.footer-links-list {
+  list-style: none;
+  padding: 0;
+  
+  /* 1. Lista jest tylko tak szeroka, jak najszerszy link (np. ResearchGate) */
+  width: fit-content; 
+  /* 2. Wyśrodkowanie CAŁEJ listy w kolumnie */
+  margin: 0 auto; 
+  
+  display: flex;
+  flex-direction: column;
+  /* 3. Linki wewnątrz zaczynają się od równej lewej krawędzi */
+  align-items: flex-start; 
+  gap: 0.5rem;
+}
+
+/* Upewnij się, że masz te właściwości dla linku: */
+.grid-link {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  gap:0.3rem;
+  gap: 1.2rem;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+  width: fit-content; /* Ciasny bounding box */
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
 }
-/* #copyright-section a:hover {
-  color: #c3c3c3;
-} */
+
+/* --- BRAKUJĄCY HOVER DLA LINKÓW W STOPCE --- */
+.grid-link:hover {
+  transform: translateY(-3px);     /* Eleganckie uniesienie w górę */
+  color: var(--text-hover) !important; /* Zmiana koloru na spójny szary z palety */
+}
+
+.grid-link i {
+  width: 1.8rem; /* Sztywna szerokość ikony */
+  text-align: right;
+  font-size: 1.4rem;
+  opacity: 0.9;
+}
+
+.grid-link span {
+  font-size: 1.05rem;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+
+/* ---- COPYRIGHT SECTION ---- */
+#copyright-section {
+  border-top: 1px solid var(--border-color); /* Delikatna linia oddzielająca */
+  padding-top: 2rem;
+  text-align: center;
+}
+
+#copyright-section a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: var(--text-hover); /* Ciemniejszy szary na start */
+  transition: color 0.3s ease;
+}
+
+#copyright-section a:hover {
+  color: var(--text-main); /* Rozjaśnienie całego bloku przy najechaniu */
+}
+
+.cc-icons {
+  font-size: 1.4rem;
+  display: flex;
+  gap: 0.4rem;
+}
+
+.copyright-text {
+  /* Usunięto display: flex; tekst wraca do naturalnego układu */
+  font-size: 0.95rem;
+}
+
+#copyright-icon {
+  vertical-align: middle; /* Wyrównuje ikonę do optycznego środka linii tekstu */
+  position: relative;
+  top: -1px; /* Delikatna korekta w dół/górę (możesz zmienić na 1px lub 0, jeśli przy Twojej czcionce będzie wyglądać lepiej) */
+  margin-right: 0.2rem; /* Zastępuje dawne gap, daje odstęp od daty */
+}
+
 #copyright-section a:hover #copyright-icon {
   animation: fa-bounce 0.8s;
-} 
+}
 
+/* ---- RESPONSOWNOŚĆ (Urządzenia mobilne) ---- */
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr; /* Na węższych ekranach kolumny ustawią się jedna pod drugą */
+    gap: 3rem;
+  }
+}
 
 
 

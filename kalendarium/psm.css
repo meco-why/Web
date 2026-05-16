@@ -1,0 +1,109 @@
+/* ---- NOWOCZESNA OŚ CZASU (TIMELINE) ---- */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding-left: 2rem; /* Miejsce na pionową linię */
+}
+
+/* Pionowa linia */
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 7px; /* Ustawienie linii pod kropkami */
+    height: 100%;
+    width: 2px;
+    background-color: var(--border-color);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+/* Kropki na osi czasu */
+.timeline-dot {
+    position: absolute;
+    left: -2.4rem; /* Przesunięcie na linię */
+    top: 5px;
+    width: 16px;
+    height: 16px;
+    background-color: var(--bg-main);
+    border: 3px solid var(--text-main);
+    border-radius: 50%;
+    z-index: 2;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Efekt najechania na całą sekcję roku */
+.timeline-item:hover .timeline-dot {
+    background-color: var(--text-main);
+    transform: scale(1.2);
+}
+
+.timeline-year {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--text-hover);
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.05em;
+    font-family: "Quintessential", serif; /* Użyłem Twojej ładnej czcionki z headera! */
+}
+
+.timeline-content {
+    background-color: rgba(255, 255, 255, 0.03); /* Delikatne tło karty */
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.timeline-item:hover .timeline-content {
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateX(5px); /* Karta lekko odjeżdża w prawo */
+}
+
+.timeline-content h2 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: var(--text-main);
+}
+
+.timeline-content ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.timeline-content li {
+    position: relative;
+    padding-left: 1.2rem;
+    color: var(--text-main);
+    line-height: 1.5;
+}
+
+/* Własne estetyczne kropki do list zamiast brzydkich domyślnych */
+.timeline-content li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--text-hover);
+    font-size: 1.2rem;
+    line-height: 1.2;
+}
+
+/* Wyrównanie ikonek YouTube */
+.timeline-content a {
+    margin-left: 0.5rem;
+    color: #ff0000; /* Klasyczny kolor YT */
+    border: none !important; /* Usuwa kreskę z globalnego linku */
+    opacity: 0.8;
+}
+
+.timeline-content a:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}

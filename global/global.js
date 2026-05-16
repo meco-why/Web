@@ -41,6 +41,19 @@ async function updateCurrentYear() {
     }
 };
 
+// --- MAGIA GLASSMORPHISMU ---
+window.addEventListener('scroll', function() {
+    const nav = document.getElementById('main-nav');
+    
+    // Sprawdzamy, czy menu zostało już załadowane przez includeHTML
+    if (nav) {
+        if (window.scrollY > 50) {
+            nav.classList.add('glass');
+        } else {
+            nav.classList.remove('glass');
+        }
+    }
+});
 
 includeHTML();
 
