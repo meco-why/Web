@@ -43,7 +43,7 @@ async function updateCurrentYear() {
 
 // --- MAGIA GLASSMORPHISMU ---
 window.addEventListener('scroll', function() {
-    const nav = document.getElementById('main-nav');
+    const nav = document.getElementById('nav');
     
     // Sprawdzamy, czy menu zostało już załadowane przez includeHTML
     if (nav) {
