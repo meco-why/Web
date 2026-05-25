@@ -1,9 +1,11 @@
-/* ---- NOWOCZESNA OŚ CZASU (TIMELINE) ---- */
+
+
+
 .timeline {
     position: relative;
     max-width: 800px;
     margin: 2rem auto;
-    padding-left: 2rem; /* Miejsce na pionową linię */
+    padding-left: 2rem;
 }
 
 /* Pionowa linia */
@@ -11,7 +13,7 @@
     content: '';
     position: absolute;
     top: 0;
-    left: 7px; /* Ustawienie linii pod kropkami */
+    left: 0px; 
     height: 100%;
     width: 2px;
     background-color: var(--border-color);
@@ -22,10 +24,9 @@
     margin-bottom: 3rem;
 }
 
-/* Kropki na osi czasu */
 .timeline-dot {
     position: absolute;
-    left: -2.4rem; /* Przesunięcie na linię */
+    left: -2.45rem;
     top: 5px;
     width: 16px;
     height: 16px;
@@ -36,7 +37,7 @@
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-/* Efekt najechania na całą sekcję roku */
+
 .timeline-item:hover .timeline-dot {
     background-color: var(--text-main);
     transform: scale(1.2);
@@ -48,11 +49,12 @@
     color: var(--text-hover);
     margin-bottom: 0.5rem;
     letter-spacing: 0.05em;
-    font-family: "Quintessential", serif; /* Użyłem Twojej ładnej czcionki z headera! */
+    font-family: "Quintessential", serif; 
 }
 
 .timeline-content {
-    background-color: rgba(255, 255, 255, 0.03); /* Delikatne tło karty */
+    /* font-variant-numeric: oldstyle-nums; */
+    background-color: rgba(255, 255, 255, 0.03); 
     border: 1px solid var(--border-color);
     border-radius: 8px;
     padding: 1.5rem;
@@ -61,7 +63,7 @@
 
 .timeline-item:hover .timeline-content {
     border-color: rgba(255, 255, 255, 0.2);
-    transform: translateX(5px); /* Karta lekko odjeżdża w prawo */
+    transform: translateX(5px); 
 }
 
 .timeline-content h2 {
@@ -71,6 +73,8 @@
 }
 
 .timeline-content ul {
+    font-variant-numeric: oldstyle-nums;
+    
     list-style: none;
     padding-left: 0;
     display: flex;
@@ -85,7 +89,6 @@
     line-height: 1.5;
 }
 
-/* Własne estetyczne kropki do list zamiast brzydkich domyślnych */
 .timeline-content li::before {
     content: "•";
     position: absolute;
@@ -95,11 +98,10 @@
     line-height: 1.2;
 }
 
-/* Wyrównanie ikonek YouTube */
 .timeline-content a {
     margin-left: 0.5rem;
-    color: #ff0000; /* Klasyczny kolor YT */
-    border: none !important; /* Usuwa kreskę z globalnego linku */
+    color: #ff0000; 
+    border: none !important; 
     opacity: 0.8;
 }
 

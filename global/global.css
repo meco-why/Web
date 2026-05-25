@@ -24,27 +24,29 @@
   --border-color: #334155;       
 }
 
-/* ---- TŁO KAŻDEJ STRONY ---- */
+/* 
+każda strona składa się z: 
+body:
+  header (top line) + nav
+  main
+  last-update-date
+  footer
+*/
+
+/* ---- BODY KAŻDEJ STRONY ---- */
 body {
   background-color: var(--bg-body); 
-  color: var(--text-main);          /* domyślny kolor tekstu */
+  color: var(--text-main);
 }
 
 /* ---- MAIN KAŻDEJ STRONY ---- */
-/* 
-bo każda stron ma budowę: 
-body:
-  heder (top line + nav)
-  main
-  footer
-*/
 main {
   width: 100%;
   max-width: 900px; 
   margin: 0 auto;
   padding: 2rem 2rem; 
-  /* color: var(--text-main); */
   min-height: 60vh; 
+  
 }
 
 /* ---- GLOBAL FONTS ---- */
@@ -89,7 +91,6 @@ main {
   color:#c3c3c3;
 }
 
-/* Globalne style dla linków w treści głównej */
 main a.links-blue, main a.links-black-grey {
   color: var(--text-hover);
   text-decoration: none;
@@ -356,6 +357,20 @@ footer {
   }
 }
 
+
+
+/* ---- LAST UPDATE DATE ---- */
+.last-update-date {
+  margin: 0.8rem;
+
+  font-size: 0.8rem;
+  font-style: italic;
+  color: var(--text-hover);
+  text-align: right;
+
+  font-variant-numeric: oldstyle-nums;
+  /* font-feature-settings: "onum" 1; */
+}
 
 
 

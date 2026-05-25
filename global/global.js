@@ -26,7 +26,6 @@ async function includeHTML() {
                 ⚠️ Failed to load component: ${url}
             </div>`;
         }
-        
 
     }
 
@@ -41,11 +40,10 @@ async function updateCurrentYear() {
     }
 };
 
-// --- MAGIA GLASSMORPHISMU ---
+// --- GLASSMORPHISM ---
 window.addEventListener('scroll', function() {
     const nav = document.getElementById('nav');
     
-    // Sprawdzamy, czy menu zostało już załadowane przez includeHTML
     if (nav) {
         if (window.scrollY > 50) {
             nav.classList.add('glass');
