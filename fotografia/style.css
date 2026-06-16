@@ -1,0 +1,37 @@
+body { font-family: 'Segoe UI', Tahoma, sans-serif; background-color: #121212; color: #e0e0e0; margin: 0; padding: 20px; display: flex; justify-content: center; }
+.container { display: flex; flex-wrap: wrap; gap: 20px; max-width: 1000px; width: 100%; }
+
+.panel { background-color: #1e1e1e; padding: 25px; border-radius: 12px; box-shadow: 0 10px 20px rgba(0,0,0,0.5); flex: 1; min-width: 320px; border-top: 4px solid #4CAF50; }
+h2 { color: #4CAF50; margin-top: 0; text-align: center; border-bottom: 1px solid #333; padding-bottom: 10px; }
+
+/* Bloki z równaniami */
+.kalkulacja-row { background-color: #2a2a2a; border-radius: 8px; padding: 15px; margin-bottom: 15px; display: flex; align-items: center; justify-content: space-between; border: 1px solid #333; gap: 10px; }
+
+.kol-input { flex: 1; min-width: 120px; display: flex; flex-direction: column; justify-content: center; }
+.kol-wzor { flex: 0.3; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #888; font-size: 0.8em; text-align: center; }
+.kol-wynik-box { flex: 1; display: flex; flex-direction: column; align-items: center; }
+
+.naglowek-wyniku { font-size: 0.75em; color: #aaa; margin-bottom: 4px; text-transform: uppercase; letter-spacing: 1px; text-align: center; }
+.kol-wynik { width: 100%; text-align: center; background: #222; padding: 12px 5px; border-radius: 8px; border: 1px dashed #4CAF50; font-size: 1.15em; font-weight: bold; color: #4CAF50; box-sizing: border-box; }
+
+label { display: block; font-size: 0.85em; margin-bottom: 5px; color: #bbb; }
+.input-group { display: flex; align-items: center; gap: 5px; }
+input { width: 100%; padding: 8px; border: 1px solid #555; border-radius: 6px; background-color: #121212; color: #fff; box-sizing: border-box; text-align: center; font-size: 1em; }
+input:focus { border-color: #4CAF50; outline: none; }
+
+/* Kłódki */
+.lock-btn { cursor: pointer; font-size: 1.1em; user-select: none; padding: 5px 8px; background: #333; border-radius: 4px; border: 1px solid #555; transition: 0.2s; }
+.lock-btn.locked { background: #1a3320; border-color: #4CAF50; color: #4CAF50; }
+
+.strzalka { font-size: 1.5em; color: #4CAF50; margin-top: 2px; }
+canvas { background-color: #111; border-radius: 8px; width: 100%; border: 1px solid #333; margin-top: 15px; }
+
+.optymalna-info { font-size: 0.75em; color: #888; margin-top: 8px; text-align: center; background: #222; padding: 4px; border-radius: 4px;}
+
+/* Responsywność dla smartfonów */
+@media (max-width: 750px) {
+    .kalkulacja-row { flex-direction: column; text-align: center; }
+    .kol-input, .kol-wynik-box { width: 100%; }
+    .kol-wzor { margin: 10px 0; }
+    .strzalka { transform: rotate(90deg); } 
+}
