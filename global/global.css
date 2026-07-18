@@ -1,3 +1,6 @@
+/* ---- PALETA ✨ CATPPUCCIN ✨ ---- */
+@import url('./catppuccin.css');
+
 /* 
 
 .name -> class
@@ -14,23 +17,34 @@
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+
+
 /* ---- PALETA KOLORÓW ---- */
 :root {
-  --bg-body: #0f172a;           
-  --bg-main: #1e293b;            
-  --bg-glass: rgba(30, 41, 59, 0.85); 
-  --text-main: #f8fafc;         
-  --text-hover: #94a3b8;         
-  --border-color: #334155;       
+  --bg-main: var(--ctp-mocha-base); 
+
+  --bg-header: rgb(var(--ctp-mocha-mantle-rgb));
+  --bg-glass: rgb(from var(--ctp-mocha-surface0) r g b / 0.85); 
+
+  --bg-body: var(--ctp-mocha-base);
+
+  --bg-footer: var(--ctp-mocha-crust);  
+  
+  --text-main: var(--ctp-mocha-text);         
+  --text-hover: var(--ctp-mocha-peach);        
+
+  --border-color: var(--ctp-mocha-base);       
 }
 
 /* 
 każda strona składa się z: 
-body:
-  header (top line) + nav
-  main
-  last-update-date
-  footer
+  body 
+    - header.html
+        - <header> <top line> </header>
+        - <nav>
+    - main
+    - last-update-date
+    - footer.html
 */
 
 /* ---- BODY KAŻDEJ STRONY ---- */
@@ -119,13 +133,8 @@ main a.links-blue:hover, main a.links-black-grey:hover {
 }
 
 /* ---- HEADER ---- */
-/* HEADER = grid layout consisting of 2 rows:
-        1) <div> #top-line ("MIKOŁAJ WYBACZ" + social media icons)
-        2) <nav> (navigation buttons — menu)
-*/
-/* ---- HEADER ---- */
 header {            
-  background-color: var(--bg-main);
+  background-color: var(--bg-header);
   width: 100%;
 }
 
@@ -190,7 +199,7 @@ header h1 {
   top: 0;
   z-index: 1000;
   width: 100%;
-  background-color: var(--bg-main); 
+  background-color: var(--bg-header); 
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   transition: background-color 0.4s ease, backdrop-filter 0.4s ease, border-bottom 0.4s ease;
 }
@@ -244,7 +253,7 @@ header h1 {
 /* ---- FOOTER ---- */
 /* ---------------- */
 footer {
-  background-color: var(--bg-main); 
+  background-color: var(--bg-footer); 
   color: var(--text-main);
   padding: 4rem 1.5rem 2rem; 
 }
