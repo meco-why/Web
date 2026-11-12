@@ -21,18 +21,30 @@
 
 /* ---- PALETA KOLORÓW ---- */
 :root {
+  /* TŁA */
   --bg-main: var(--ctp-mocha-base); 
-
   --bg-header: rgb(var(--ctp-mocha-mantle-rgb));
+  --bg-body: var(--ctp-mocha-base); 
+  --bg-footer: var(--ctp-mocha-crust);  
+
+  /* POWIERZCHNIE (karty, kafelki, panele, takie tam...) */
+  --surface-base: var(--ctp-mocha-surface0); 
+  --surface-elevated: var(--ctp-mocha-surface1); 
   --bg-glass: rgb(from var(--ctp-mocha-surface0) r g b / 0.85); 
 
-  --bg-body: var(--ctp-mocha-base);
+  /* TEXT */
+  --text-main: var(--ctp-mocha-text);    
+  --text-muted: var(--ctp-mocha-subtext0);  
+  --text-faint: var(--ctp-mocha-overlay0);     
+  --text-hover: var(--accent); /* yy legacy xd */
 
-  --bg-footer: var(--ctp-mocha-crust);  
+  /* AKCENTY */
+  --accent: var(--ctp-mocha-peach);     
+  --accent-second: var(--ctp-mocha-mauve);    
   
-  --text-main: var(--ctp-mocha-text);         
-  --text-hover: var(--ctp-mocha-peach);        
-
+  /* RAMKI */
+  --border-subtle: var(--ctp-mocha-surface1); 
+  --border-main: var(--ctp-mocha-surface2);  
   --border-color: var(--ctp-mocha-base);       
 }
 
@@ -106,7 +118,7 @@ main {
 }
 
 main a.links-blue, main a.links-black-grey {
-  color: var(--text-hover);
+  color: var(--accent);
   text-decoration: none;
   border-bottom: 1px dashed var(--border-color);
   transition: color 0.3s ease, border-color 0.3s ease;
@@ -163,7 +175,7 @@ header h1 {
 }
 
 #name:hover {
-  color: var(--text-hover);
+  color: var(--accent);
 }
 
 #social {
@@ -179,7 +191,7 @@ header h1 {
 }
 
 #social a:hover {
-  color: var(--text-hover);
+  color: var(--accent);
   /* transform: translateY(-3px);  */
 }
 
@@ -222,7 +234,7 @@ header h1 {
 }
 
 #nav a:hover {
-  color: var(--text-hover);
+  color: var(--accent);
   background: transparent; 
 }
 
@@ -301,7 +313,7 @@ footer {
 
 .grid-link:hover {
   transform: translateY(-3px);     
-  color: var(--text-hover) !important; 
+  color: var(--accent) !important; 
 }
 
 .grid-link i {
@@ -330,7 +342,7 @@ footer {
   align-items: center;
   gap: 0.5rem;
   text-decoration: none;
-  color: var(--text-hover); 
+  color: var(--accent); 
   transition: color 0.3s ease;
 }
 
@@ -374,7 +386,7 @@ footer {
 
   font-size: 0.8rem;
   font-style: italic;
-  color: var(--text-hover);
+  color: var(--accent);
   text-align: right;
 
   font-variant-numeric: oldstyle-nums;
