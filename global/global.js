@@ -29,9 +29,18 @@ async function includeHTML() {
 
     }
 
+    if (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1") {
+        const blogLink = document.querySelector('a[href="https://blog.wybacz.me/"]');
+        if (blogLink) {
+            blogLink.href = "/blog/";
+        }
+    }
+
     updateCurrentYear();
 
 };
+
+
 
 async function updateCurrentYear() {
     const year = document.getElementById('current-year');
