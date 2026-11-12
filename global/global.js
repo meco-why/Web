@@ -1,4 +1,8 @@
-
+if (window.location.pathname.includes('/en/')) {
+    document.documentElement.setAttribute('data-lang', 'en');
+} else {
+    document.documentElement.setAttribute('data-lang', 'pl');
+}
 
 async function includeHTML() {
 
@@ -29,18 +33,9 @@ async function includeHTML() {
 
     }
 
-    if (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1") {
-        const blogLink = document.querySelector('a[href="https://blog.wybacz.me/"]');
-        if (blogLink) {
-            blogLink.href = "/blog/";
-        }
-    }
-
     updateCurrentYear();
 
 };
-
-
 
 async function updateCurrentYear() {
     const year = document.getElementById('current-year');
@@ -48,6 +43,26 @@ async function updateCurrentYear() {
         year.textContent = new Date().getFullYear();
     }
 };
+
+function switchLanguage(targetLang) {
+    let path = window.location.pathname;
+
+    if (targetLang === 'en') {
+        if (path.includes('/en/')) return;
+        
+        if (path.endsWith('.html')) {
+            path = path.replace(/([^/]+\.html)$/, 'en/$1');
+        } else {
+            path = path.endsWith('/') ? path + 'en/' : path + '/en/';
+        }
+    } 
+    else if (targetLang === 'pl') {
+        if (!path.includes('/en/')) return;
+        path = path.replace('/en/', '/');
+    }
+
+    window.location.href = path;
+}
 
 // --- GLASSMORPHISM ---
 window.addEventListener('scroll', function() {
