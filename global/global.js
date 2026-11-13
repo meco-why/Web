@@ -6,11 +6,11 @@ if (window.location.pathname.includes('/en/')) {
 
 async function includeHTML() {
 
-    const elements = document.querySelectorAll('[insert-HTML]');
+    const elements = document.querySelectorAll('[data-insert-html]');
 
     for (const element of elements){
 
-        const url = element.getAttribute('insert-HTML');
+        const url = element.getAttribute('data-insert-html');
 
         try {
 

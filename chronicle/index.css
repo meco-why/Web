@@ -46,7 +46,7 @@
 .timeline-year {
     font-size: 1.2rem;
     font-weight: bold;
-    color: var(--text-hover);
+    color: var(--accent);
     margin-bottom: 0.5rem;
     letter-spacing: 0.05em;
     font-family: "Quintessential", serif; 
@@ -93,7 +93,7 @@
     content: "•";
     position: absolute;
     left: 0;
-    color: var(--text-hover);
+    color: var(--accent);
     font-size: 1.2rem;
     line-height: 1.2;
 }

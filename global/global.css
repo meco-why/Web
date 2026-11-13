@@ -53,7 +53,6 @@ html[data-lang="en"] #btn-en {
   --text-main: var(--ctp-mocha-text);    
   --text-muted: var(--ctp-mocha-subtext0);  
   --text-faint: var(--ctp-mocha-overlay0);     
-  --text-hover: var(--accent); /* yy legacy xd */
 
   /* AKCENTY */
   --accent: var(--ctp-mocha-peach);     
